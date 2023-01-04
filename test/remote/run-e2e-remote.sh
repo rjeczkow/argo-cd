@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -x
+
 # Should point to the Argo CD API endpoint on the cluster
 if test "${ARGOCD_SERVER}" = ""; then
 	echo "Please set ARGOCD_SERVER to the remote Argo CD API endpoint to test." >&2

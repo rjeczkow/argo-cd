@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -x
+
 BASEPATH=$(dirname $0)
 PERMFILE=${BASEPATH}/argocd-remote-permissions.yaml
 if ! test -f ${PERMFILE}; then
